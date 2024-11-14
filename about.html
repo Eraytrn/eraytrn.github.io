@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Hakkımda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+</head>
+<body class="body-features" id="body-features-about">
+    <ul class="navbar">
+        <nav class="navbar-left-items">
+            <div id="date"></div> 
+            <div id="time"></div> 
+        </nav>
+        <nav id="username">Eray TURAN</nav>
+        <nav class="nav-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a class="active" href="about.html">Hakkımda</a></li>
+            <li><a href="projects.html">Projeler</a></li>
+        </nav>
+    </ul>
+
+    <section id="home" class="about">
+        <div class="bio-section">
+            <h2>Eray Turan</h2>
+            <p><strong>Meslek:</strong> Bilgisayar Mühendisliği Öğrencisi</p>
+            <p><strong>Hobiler:</strong> Futbol, Basketbol ve Seyahat</p>
+            
+            <div class="biography">
+                <p>
+                    Merhaba, ben Eray. Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.
+                    <br><span id="moreText" class="hidden">
+                    22 Kasım 2002 doğumluyum. Rize/Pazar ilçesinde yaşıyorum. İlkokulu Rize/Pazar ilçesinde
+				    Haberal İlköğretim okulunda, lise öğretimini ise Çayeli Fen Lisesi'nde tamamladım.
+				    Şuan ise üniversite eğitimimi Recep Tayyip Erdoğan Üniversitesi'nde sürdürüyorum.</span>
+                </p>
+                <button id="seeMore" onclick= toggleText()>Daha Fazla Gör</button>
+            </div>
+        </div>
+
+        <div class="about-photo">
+            <img src="assets/images/about-image/about-image.jpeg" alt="Eray Turan" class="profile-photo-homepage-about">
+        </div>  
+    </section>
+</body>
+</html>

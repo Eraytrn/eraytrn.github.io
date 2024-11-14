@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+</head>
+<body class="body-features">
+    <ul class="navbar">
+        <nav class="navbar-left-items">
+            <div id="date"></div> 
+            <div id="time"></div> 
+        </nav>
+        <nav id="username">Eray TURAN</nav>
+        <nav class="nav-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a class="active" href="projects.html">Projeler</a></li>
+        </nav>
+    </ul>
+
+    <section class="projects-section">
+        <div class="project-filters">
+            <button onclick="filterProjects('recent')">En Son Projeler</button>
+            <button onclick="filterProjects('popular')">En Beğenilen Projeler</button>
+            <button onclick="filterProjects('all')">Tüm Projeler</button>
+        </div>
+
+        <div class="projects-container">
+            <div class="project-card" data-category="recent">
+                <img src="assets/images/project-images/todo-app.png" alt="Proje 1">
+                <h2>Yapılacaklar Listesi Uygulaması (Todo App)</h2>
+                <p class="hidden-project-description">Bu uygulama react kullanılarak kullanıcının basit bir yapılacaklar
+                    listesi oluşturmasına olanak tanır.
+                </p>
+            </div>
+            <div class="project-card" data-category="popular">
+                <img src="assets/images/project-images/realestate-app.png" alt="Proje 2">
+                <h2>Emlakçı Sitesi</h2>
+                <p class="hidden-project-description">Bu bir emlakçı sitesidir. Kullanıcılar istedikleri ilanları arayabilir 
+                    veya tüm ilanları inceleyebilirler. Ön uçta Bootstrap ve Javascript teknolojileri, 
+                    arka uçta Dapper, API, MVC ve Csharp teknolojileri kullanılmıştır.
+                </p>
+            </div>  
+			<div class="project-card" data-category="recent">
+                <img src="assets/images/project-images/bookexchange-app.png" alt="Proje 2">
+                <h2>Kitap Takas Konsol Uygulaması</h2>
+                <p class="hidden-project-description">Kitap Değişim Platformu, kullanıcılar arasında kitap değişimini 
+                    kolaylaştırmak için tasarlanmış, kitap listelemelerini yönetme, değişim taleplerini karşılama ve 
+                    işlem geçmişini izleme gibi temel özelliklere sahip kapsamlı bir çözümdür.
+                </p>
+            </div>
+			<div class="project-card" data-category="popular">
+                <img src="assets/images/project-images/recipecost-app.png" alt="Proje 2">
+                <h2>Tarif Fiyat Hesaplama Uygulaması</h2>
+                <p class="hidden-project-description">Kullanıcıların istedikleri yemek malzemelerini ve fiyatlarını girerek
+                    bir fiyat listesi oluşturmasını sağlar. Java dilinde oluşturulmuştur.
+                </p>
+            </div>
+			<div class="project-card">
+                <img src="assets/images/project-images/weather-app.png" alt="Proje 2">
+                <h2>Hava Durumu Uygulaması</h2>
+                <p class="hidden-project-description">Kullanıcıların istedikleri şehir ismini girerek hava durumunu 
+                    öğrenmesini sağlayan python kullanılarak oluşturulmuş bir hava durumu uygulamasıdır.
+                </p>
+            </div>
+			<div class="project-card">
+                <img src="assets/images/project-images/newsbot-app.png" alt="Proje 2">
+                <h2>Haber Botu Uygulaması</h2>
+                <p class="hidden-project-description">İstenilen kategoriye göre güncel haberleri listeleyen bir haber botu
+                    uygulamasıdır.
+                </p>
+            </div>
+        </div>
+		<div id="project-modal" class="modal">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<img class="modal-content" id="modal-img">
+			<div id="caption"></div>
+            <div id="description"></div>
+		</div>
+    </section>
+</body>
+</html>

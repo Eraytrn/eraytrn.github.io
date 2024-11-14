@@ -1,0 +1,545 @@
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #2d2b85;
+        font-size: 1.2em;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0; 
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-left-items {
+        display: flex;
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    #date, #time {
+        color: white;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #username {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(252, 103, 4);
+        text-align: center;
+        flex-grow: 1;
+        margin-left: 100px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links li a {
+        color: white;
+        text-align: center;
+        padding: 25px 30px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        transition: all 0.3s ease; 
+    }
+
+    .nav-links li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+
+    .nav-links li a:hover {
+        color: #e48509; 
+        background-color: #333; 
+        transform: translateY(-5px); 
+    }
+
+    .active {
+        background-color: #e48509;
+    }
+
+    .body-features {
+        background-color: antiquewhite;
+        color: antiquewhite;
+        min-height: 150vh;
+        padding: 20px;
+    }
+
+    #body-features-about{
+        overflow: hidden;
+    }
+
+    .homepage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px; 
+    }
+
+    .homepage-photo {
+        width: 500px;
+        height: 500px;
+        border: 8px solid #2d2b85;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 100px;
+        margin-top: 70px;
+        transition: transform 0.3s ease; 
+    }
+
+    .homepage-photo:hover {
+        transform: scale(1.1);
+    }
+
+    .intro-text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #2d2b85;
+        font-weight: bold;
+    }
+
+    .intro-text h1 {
+        font-size: 2.5em;
+        color: #e48509;
+        margin-bottom: 20px; 
+    }
+
+    .intro-text h2 {
+        margin-left:44px ;
+    }
+
+    .icon{
+        margin-top:60px ;
+    }
+
+    .instagram-icon i {
+        color: #ec7709; 
+        font-size: 35px;
+        transition: color 0.3s ease; 
+        margin-left: 155px;
+    
+    }
+
+    .instagram-icon i:hover {
+        color:black ;
+    }
+
+    .github-icon{
+        color:#ec7709;
+        font-size:35px;
+        transition: color 0.3s ease;
+        margin: 20px;
+    }
+
+    .github-icon:hover{
+        color:black ;
+    }
+
+    .linkedin-icon{
+        color:#ec7709;
+        font-size:35px;
+        transition: color 0.3s ease;
+        
+    }
+
+    .linkedin-icon:hover{
+        color:black ;
+    }
+
+    .about-button {
+        margin-top: 20px; 
+        margin-left: 155px; 
+        height: 70px;
+        width: 150px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 25px; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+    .about-button h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        color: #2d2b85;
+        margin: 0;
+    }
+
+    .about-button:hover {
+        background-color: #694949;
+        transform: scale(1.05);  
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        color: white;
+    }
+
+    .about-button:hover h3 {
+        color: white;     
+    }
+
+    .contact-form-section {
+        margin-top: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .contact-form-section h2{
+        color: #2d2b85;
+    }
+
+    #contact-form {
+        background-color: #2d2b85; 
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #contact-form label {
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+        font-weight: bold;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 90%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    #contact-form input[type="submit"] {
+        background-color: #e48509;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    #contact-form input[type="submit"]:hover {
+        background-color: #444;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+
+    .biography {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+    .about-photo {
+        width: 450px;
+        height: 450px;
+        border: 5px solid #2d2b85;
+        border-radius: 10%;
+        overflow: hidden;
+        margin-top: 30px;
+        margin-right: 100px;
+        transition: transform 0.3s ease;
+    }
+
+    .about-photo:hover {
+        transform: scale(1.1);
+    }
+
+    .profile-photo-homepage-about {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .bio-section{
+        width: 1000px;
+        height: 500px;
+        border: 3px solid #00000a;
+        border-radius: 1%;
+        margin-top: 50px;
+        margin-right: 100px;
+        margin-left: 20px;
+        transition: transform 0.3s ease;
+        padding:50px ;
+        color: #111;
+    }
+
+    .bio-section p{
+        font-size: 20px;
+    }
+
+    #seeMore{
+        margin-top: 50px;
+        margin-left: 410px;
+        height: 70px;
+        width: 150px;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 25px; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+    #seeMore:hover {
+        background-color: #694949;
+        transform: scale(1.05);  
+        color: white;
+    }
+
+    #seeMore:hover h3 {
+        color: white; 
+    }
+
+    .projects-section {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .project-filters button {
+        margin: 5px;
+        margin-top: 70px;
+        height: 80px;
+        width: 200px;
+        background-color: rgb(11, 177, 243);
+        border: none;
+        border-radius: 25px; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+    .project-filters button:hover {
+        background-color: #e9ab02;
+        transform: scale(1.05);  
+        color: white;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
+        justify-content: center;
+        padding: 20px;
+        margin-top: 90px;
+    }
+
+    .project-card {
+        background-color: white;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+        height: 500px;
+        width: 500px;
+        margin: 30px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .project-card h2{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #00000a;
+    }
+
+    .project-card p{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #00000a;
+    }
+
+
+    .hidden-project-description{
+        display: none;
+    }
+
+    #description {
+        max-width: 600px; 
+        width: 90%; 
+        margin: 0 auto; 
+        margin-top: 13px;
+        word-wrap: break-word;
+        overflow-wrap: break-word; 
+        white-space: normal;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1001;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 20px;
+    }
+
+    .modal-content {
+        display: block;
+        margin: auto;
+        max-width: 80%;
+    
+    }
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar.open .nav-links {
+        display: flex; 
+    }
+   
+    .navbar-left-items {
+        padding-left: 10px;
+    }
+
+    #username {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .intro-text h1{
+        margin-left: 60px;
+
+    }
+
+    .intro-text h2{
+        margin-left: 60px;
+
+    }
+
+    .homepage {
+        flex-direction: column; 
+        margin-top: 100px;
+    }
+
+    .homepage-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .instagram-icon i{
+        margin-left: 120px;
+    }
+    
+    .about-button{
+        margin-top:45px;
+        margin-left: 119px;
+
+    }
+
+    .about {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    #body-features-about{
+      overflow: scroll;
+    }
+
+    .bio-section {
+        margin-left: 100px;
+        width: 270px;
+        height: 800px;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        word-wrap: break-word; 
+    }
+
+    .about-photo {
+        width: 90%; 
+        margin-top: 20px; 
+        margin-left: 107px;
+    }
+
+    #seeMore {
+        width: 40%;
+        margin-left: 10px;
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+        overflow: hidden; 
+    }
+
+     .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .project-card {
+        width: 90%; 
+        height: auto; 
+        margin: 15px 0; 
+    }
+
+    .project-card img {
+        height: 300px; 
+    }
+}
+

@@ -78,8 +78,10 @@
         padding: 20px;
     }
 
-    #body-features-about{
-        overflow: hidden;
+    .body-features-about{
+        background-color: antiquewhite;
+        color: antiquewhite;
+        padding: 20px;
     }
 
     .homepage {
@@ -412,21 +414,12 @@
         cursor: pointer;
     }
 
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: center;
     }
     
-    .navbar.open .nav-links {
-        display: flex; 
-    }
-   
-    .navbar-left-items {
-        padding-left: 10px;
-    }
-
     #username {
         font-size: 24px;
         margin-left: 20px;
@@ -455,7 +448,7 @@
     }
 
     .icon{
-        margin-left: 112px;
+        margin-left: 87px;
     }
     
     .about-button{
@@ -468,10 +461,6 @@
         flex-direction: column; 
         align-items: center; 
         text-align: center; 
-    }
-
-    #body-features-about{
-      overflow: scroll;
     }
 
     .bio-section {
@@ -495,13 +484,6 @@
         text-overflow: ellipsis; 
         white-space: nowrap; 
         overflow: hidden; 
-    }
-
-     .projects-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px;
     }
 
     .project-card {
